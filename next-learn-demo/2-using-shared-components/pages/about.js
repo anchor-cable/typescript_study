@@ -1,7 +1,9 @@
-export default function About() {
+import Layout from '../components/MyLayout';
+
+export default function Index() {ƒ
   return (
-    <div>
+    <Layout>
       <p>This is the about page</p>
-    </div>
-  )
+    </Layout>
+  );
 }
