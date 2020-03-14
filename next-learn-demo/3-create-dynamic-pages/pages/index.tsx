@@ -1,7 +1,7 @@
-import Layout from '../components/MyLayout.js';
+import Layout from '../components/MyLayout'
 import Link from 'next/link';
 
-const PostLink = props => (
+const PostLink = (props:any) => (
   <li>
     <Link href={`/post?title=${props.title}`}>
       <a>{props.title}</a>
@@ -19,5 +19,5 @@ export default function Blog() {
         <PostLink title="Deploy apps with Zeit" />
       </ul>
     </Layout>
-  );
+  )
 }
